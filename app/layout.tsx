@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "sonner";
 import { BackgroundShapes } from "@/components/background-shapes";
 import type React from "react";
 import type { Metadata } from "next";
@@ -97,7 +97,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
-        <Toaster />
+        <Toaster position="top-center" />
       </body>
     </html>
   );
