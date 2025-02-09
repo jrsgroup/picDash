@@ -1,101 +1,147 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Zap, Image, Droplet } from "lucide-react";
+import { AnimatedSection } from "@/components/animated-section";
+import { Logo } from "@/components/logo";
+import { FloatingIcon } from "@/components/floating-icon";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col items-center w-full">
+      {/* Hero Section with Background Effects */}
+      <section className="relative w-full overflow-hidden">
+        {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Background Grid */}
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, black 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        />
+
+        {/* Main Hero Content */}
+        <AnimatedSection className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <Logo className="w-20 h-20 mb-4" />
+              <AnimatedSection className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  Convert SVGs to PNGs.
+                  <br />
+                  No sign-up needed.
+                </h1>
+                <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
+                  A dead-simple converter that just works. Free forever, no
+                  strings attached.
+                </p>
+              </AnimatedSection>
+              <AnimatedSection delay={0.2}>
+                <Link href="/convert">
+                  <Button
+                    variant="default"
+                    size="lg"
+                    className="group bg-black text-white hover:bg-gray-800"
+                  >
+                    Start Converting
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </Link>
+              </AnimatedSection>
+            </div>
+          </div>
+        </AnimatedSection>
+      </section>
+
+      {/* Features Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <div className="container mx-auto px-4 md:px-6">
+          <h2 className="text-2xl font-bold text-center mb-12">
+            Why use QuickPic?
+          </h2>
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <AnimatedSection
+              className="flex flex-col items-center space-y-2 p-4"
+              delay={0.1}
+            >
+              <FloatingIcon>
+                <Zap className="w-10 h-10 mb-2 text-black" />
+              </FloatingIcon>
+              <h3 className="text-xl font-semibold">Quick & Easy</h3>
+              <p className="text-center text-gray-600">
+                Drop your SVG, pick a size, done. No account needed.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection
+              className="flex flex-col items-center space-y-2 p-4"
+              delay={0.2}
+            >
+              <FloatingIcon>
+                <Image className="w-10 h-10 mb-2 text-black" />
+              </FloatingIcon>
+              <h3 className="text-xl font-semibold">Crystal Clear</h3>
+              <p className="text-center text-gray-600">
+                Get pixel-perfect PNGs at any size you want.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection
+              className="flex flex-col items-center space-y-2 p-4"
+              delay={0.3}
+            >
+              <FloatingIcon>
+                <Droplet className="w-10 h-10 mb-2 text-black" />
+              </FloatingIcon>
+              <h3 className="text-xl font-semibold">100% Free</h3>
+              <p className="text-center text-gray-600">
+                No hidden fees. No watermarks. Just convert and go.
+              </p>
+            </AnimatedSection>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden bg-white">
+        {/* Background Pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, black 1px, transparent 0)",
+            backgroundSize: "24px 24px",
+          }}
+        />
+
+        <div className="container mx-auto px-4 md:px-6 relative">
+          <div className="flex flex-col items-center space-y-4 text-center">
+            <span className="text-sm font-medium text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
+              Ready when you are
+            </span>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Start converting now
+            </h2>
+            <p className="mx-auto max-w-[600px] text-gray-600 md:text-xl">
+              Join thousands of designers and developers who use QuickPic daily.
+              Free forever, just like it should be.
+            </p>
+            <AnimatedSection delay={0.2}>
+              <Link href="/convert">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="mt-4 group bg-black text-white hover:bg-gray-800"
+                >
+                  Convert SVG to PNG
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
