@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Image, Droplet } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { AnimatedSection } from "@/components/animated-section";
 import { Logo } from "@/components/logo";
 import { FloatingIcon } from "@/components/floating-icon";
+
+import { FaBolt, FaImage } from "react-icons/fa6";
+import { BiSolidDroplet } from "react-icons/bi";
 
 export default function Home() {
   return (
@@ -68,7 +71,7 @@ export default function Home() {
               delay={0.1}
             >
               <FloatingIcon>
-                <Zap className="w-10 h-10 mb-2 text-black" />
+                <FaBolt className="w-10 h-10 mb-2 text-black" />
               </FloatingIcon>
               <h3 className="text-xl font-semibold">Quick & Easy</h3>
               <p className="text-center text-gray-600">
@@ -80,7 +83,7 @@ export default function Home() {
               delay={0.2}
             >
               <FloatingIcon>
-                <Image className="w-10 h-10 mb-2 text-black" />
+                <FaImage className="w-10 h-10 mb-2 text-black" />
               </FloatingIcon>
               <h3 className="text-xl font-semibold">Crystal Clear</h3>
               <p className="text-center text-gray-600">
@@ -92,7 +95,7 @@ export default function Home() {
               delay={0.3}
             >
               <FloatingIcon>
-                <Droplet className="w-10 h-10 mb-2 text-black" />
+                <BiSolidDroplet className="w-10 h-10 mb-2 text-black" />
               </FloatingIcon>
               <h3 className="text-xl font-semibold">100% Free</h3>
               <p className="text-center text-gray-600">
@@ -124,7 +127,6 @@ export default function Home() {
               Start converting now
             </h2>
             <p className="mx-auto max-w-[600px] text-gray-600 md:text-xl">
-              Join thousands of designers and developers who use QuickPic daily.
               Free forever, just like it should be.
             </p>
             <AnimatedSection delay={0.2}>
