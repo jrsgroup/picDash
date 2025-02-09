@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QuickPic: SVG to PNG - Seriously Fast! ⚡️
 
-## Getting Started
+Okay, so I made this thing called QuickPic. It's pretty simple: it converts SVG files to PNG images. But the _reason_ I made it is because I was constantly frustrated with how slow and clunky other SVG converters were. I just wanted something that was FAST. Like, _really_ fast.
 
-First, run the development server:
+## What's the Deal?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Speed Demon:** Seriously, this thing is quick. I've optimized it to be as fast as possible. No waiting around.
+- **Free (as in beer):** Yep, totally free. No hidden costs, no watermarks, no BS.
+- **Drag & Drop (because who has time for buttons?):** Just drag your SVG file onto the window, and BAM! Instant PNG.
+- **Upscale It!:** Need a bigger PNG? Choose a scale factor from the dropdown.
+- **Clean & Simple:** I hate cluttered interfaces. QuickPic is designed to be super easy to use. You won't need a manual.
+- **(Hopefully) Works Everywhere:** I've tested it on Windows, Mac & iOS. Let me know if it breaks on your system!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Use It
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  Go to [QuickPic](https://quickpic.jrsystems.io).
+2.  Drag your SVG file onto the "Drag & drop an SVG file here, or click to select one" area. (It's pretty obvious!)
+3.  Choose your desired scale factor from the "Scale Factor" dropdown (1x, 2x, 3x, etc.).
+4.  Click the "Convert to PNG" button.
+5.  Download the Image.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Why Did I Make This?
 
-## Learn More
+Honestly? I was annoyed how everything was either behind a paywall, slow or needed an account. I needed a fast and _free_ SVG to PNG converter, and everything else sucked. So I built my own. Hopefully, you'll find it useful too!
 
-To learn more about Next.js, take a look at the following resources:
+## Bugs? Suggestions?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Let me know! Create an issue on [your GitHub repository URL here]. I'm always looking for ways to make QuickPic even better.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+**QuickPic Learning License**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This code is made available for educational purposes only. You are free to:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Read and study the code to learn how it works.
+- Experiment with the code for your own personal learning.
+
+You are **NOT** permitted to:
+
+- Copy, redistribute, or reuse the code in any commercial or non-commercial project without explicit permission from the copyright holder.
+- Create derivative works based on this code for distribution or commercial use.
+
+Copyright (c) 2025 JRS
