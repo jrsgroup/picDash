@@ -7,6 +7,7 @@ import { FloatingIcon } from "@/components/floating-icon";
 
 import { FaBolt, FaImage } from "react-icons/fa6";
 import { BiSolidDroplet } from "react-icons/bi";
+import { PicDashLogo } from "@/components/picdash";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
         <AnimatedSection className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <Logo className="w-20 h-20 mb-4" />
+              <PicDashLogo className="w-20 h-20 mb-4" />
               <AnimatedSection className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Convert SVGs to PNGs.
@@ -63,7 +64,7 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-2xl font-bold text-center mb-12">
-            Why use QuickPic?
+            Why use picDash?
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
             <AnimatedSection

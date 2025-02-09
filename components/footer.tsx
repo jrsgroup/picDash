@@ -6,10 +6,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-8 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <Logo className="w-6 h-6" />
-          <span className="text-sm font-semibold">QuickPic</span>
+          <span className="text-sm font-semibold">picDash</span>
         </div>
         <p className="text-sm text-gray-500">
-          &copy; 2025 QuickPic by JRS. All rights reserved.
+          &copy; 2025 picDash by JRS. All rights reserved.
         </p>
       </div>
     </footer>

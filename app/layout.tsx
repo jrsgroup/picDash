@@ -14,8 +14,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "QuickPic - Free SVG to PNG Converter",
-    template: "%s | QuickPic",
+    default: "picDash - Free SVG to PNG Converter",
+    template: "%s | picDash",
   },
   description:
     "Convert SVG files to high-quality PNG images instantly. Free forever, no sign-up needed. Perfect for designers and developers.",
@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "free tool",
     "design",
     "development",
+    "picDash",
+    "QuickPic",
+    "quickpic",
   ],
   authors: [{ name: "JR" }],
   creator: "JRSystems",
@@ -37,14 +40,14 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "QuickPic - Free SVG to PNG Converter",
+    title: "picDash - Free SVG to PNG Converter",
     description:
       "Convert SVG files to high-quality PNG images instantly. Free forever, no sign-up needed.",
-    url: "https://quickpic.jrsystems.io",
-    siteName: "QuickPic",
+    url: "https://picDash.jrsystems.io",
+    siteName: "picDash",
     images: [
       {
-        url: "https://quickpic.jrsystems.io/og-image.png",
+        url: "https://picDash.jrsystems.io/og-image.png",
         width: 1200,
         height: 630,
         alt: "QuickPic - SVG to PNG Converter",
@@ -58,7 +61,7 @@ export const metadata: Metadata = {
     title: "QuickPic - Free SVG to PNG Converter",
     description:
       "Convert SVG files to high-quality PNG images instantly. Free forever, no sign-up needed.",
-    images: ["https://quickpic.jrsystems.io/og-image.png"],
+    images: ["https://picDash.jrsystems.io/og-image.png"],
     creator: "@jrsystems",
   },
   robots: {
