@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { BackgroundShapes } from "@/components/background-shapes";
 import type React from "react";
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -84,6 +85,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
+      <SpeedInsights />
       <body className={`${inter.className} flex flex-col min-h-full`}>
         <BackgroundShapes />
         <Header />
