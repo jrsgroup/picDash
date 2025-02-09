@@ -25,7 +25,7 @@ Honestly? I was annoyed how everything was either behind a paywall, slow or need
 
 ## Bugs? Suggestions?
 
-Let me know! Create an issue on [your GitHub repository URL here]. I'm always looking for ways to make QuickPic even better.
+Let me know! Create an issue on [GitHub](https://github.com/jacobrozwadowski/quickpic). I'm always looking for ways to make QuickPic even better.
 
 ## License
 
